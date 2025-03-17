@@ -1,0 +1,96 @@
+## ComfyUI-Manager: installing dependencies done.
+[2025-03-17 19:06:57.035] ** ComfyUI startup time: 2025-03-17 19:06:57.035
+[2025-03-17 19:06:57.035] ** Platform: Linux
+[2025-03-17 19:06:57.035] ** Python version: 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
+[2025-03-17 19:06:57.035] ** Python executable: /home/arkadii/personal/faceswap/.venv/bin/python
+[2025-03-17 19:06:57.035] ** ComfyUI Path: /home/arkadii/personal/faceswap/faceswap/inpaint
+[2025-03-17 19:06:57.035] ** ComfyUI Base Folder Path: /home/arkadii/personal/faceswap/faceswap/inpaint
+[2025-03-17 19:06:57.035] ** User directory: /home/arkadii/personal/faceswap/faceswap/inpaint/user
+[2025-03-17 19:06:57.035] ** ComfyUI-Manager config path: /home/arkadii/personal/faceswap/faceswap/inpaint/user/default/ComfyUI-Manager/config.ini
+[2025-03-17 19:06:57.035] ** Log path: /home/arkadii/personal/faceswap/faceswap/inpaint/user/comfyui.log
+
+Prestartup times for custom nodes:
+[2025-03-17 19:06:57.421]    0.0 seconds: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/rgthree-comfy
+[2025-03-17 19:06:57.422]    0.9 seconds: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/comfyui-manager
+[2025-03-17 19:06:57.422]
+[2025-03-17 19:06:57.433] Checkpoint files will always be loaded safely.
+[2025-03-17 19:06:57.511] Total VRAM 24257 MB, total RAM 128581 MB
+[2025-03-17 19:06:57.511] pytorch version: 2.6.0+cu124
+[2025-03-17 19:06:57.511] Set vram state to: NORMAL_VRAM
+[2025-03-17 19:06:57.511] Device: cuda:0 NVIDIA GeForce RTX 3090 : native
+[2025-03-17 19:06:58.086] Using pytorch attention
+[2025-03-17 19:06:58.664] Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.
+[2025-03-17 19:06:58.664] Could not find the extra_model_paths config file.
+[2025-03-17 19:06:58.666] ComfyUI frontend version: 1.12.14
+[2025-03-17 19:06:58.666] [Prompt Server] web root: /home/arkadii/personal/faceswap/.venv/lib/python3.11/site-packages/comfyui_frontend_package/static
+[2025-03-17 19:06:59.625]
+[0;33m[ReActor][0m - [38;5;173mSTATUS[0m - [0;32mRunning v0.6.0-a1 in ComfyUI[0m
+[2025-03-17 19:06:59.707] Torch version: 2.6.0+cu124
+[2025-03-17 19:06:59.718] No module named 'ultralytics'
+[2025-03-17 19:06:59.819] Total VRAM 24257 MB, total RAM 128581 MB
+[2025-03-17 19:06:59.819] pytorch version: 2.6.0+cu124
+[2025-03-17 19:06:59.819] Set vram state to: NORMAL_VRAM
+[2025-03-17 19:06:59.819] Device: cuda:0 NVIDIA GeForce RTX 3090 : native
+[2025-03-17 19:06:59.852] ### Loading: ComfyUI-Impact-Pack (V8.8.1)
+[2025-03-17 19:06:59.908] [Impact Pack] Wildcards loading done.
+[2025-03-17 19:06:59.920]
+[2025-03-17 19:06:59.920] [92m[rgthree-comfy] Loaded 42 fantastic nodes. 🎉[00m
+[2025-03-17 19:06:59.920]
+[2025-03-17 19:06:59.943] ### Loading: ComfyUI-Manager (V3.31.5)
+[2025-03-17 19:06:59.943] [ComfyUI-Manager] network_mode: public
+[2025-03-17 19:06:59.944] ### ComfyUI Revision: UNKNOWN (The currently installed ComfyUI is not a Git repository)
+[2025-03-17 19:07:00.065] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2025-03-17 19:07:00.191] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2025-03-17 19:07:00.191]
+Import times for custom nodes:
+[2025-03-17 19:07:00.191]    0.0 seconds: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/websocket_image_save.py
+[2025-03-17 19:07:00.191]    0.0 seconds: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/comfyui-inpaint-cropandstitch
+[2025-03-17 19:07:00.191]    0.0 seconds: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/rgthree-comfy
+[2025-03-17 19:07:00.191]    0.0 seconds: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/comfyui_essentials
+[2025-03-17 19:07:00.191]    0.0 seconds: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/comfyui-manager
+[2025-03-17 19:07:00.191]    0.0 seconds: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/ComfyUI-to-Python-Extension
+[2025-03-17 19:07:00.191]    0.0 seconds: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/efficiency-nodes-comfyui
+[2025-03-17 19:07:00.191]    0.0 seconds: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/comfyui-kjnodes
+[2025-03-17 19:07:00.191]    0.1 seconds: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/comfyui-impact-pack
+[2025-03-17 19:07:00.191]    0.2 seconds: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/teacache
+[2025-03-17 19:07:00.191]    0.9 seconds: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/comfyui-reactor
+[2025-03-17 19:07:00.191]
+[2025-03-17 19:07:00.277] CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[2025-03-17 19:07:00.301] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2025-03-17 19:07:00.305] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2025-03-17 19:07:00.317] clip missing: ['text_projection.weight']
+[2025-03-17 19:07:00.418] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2025-03-17 19:07:01.352] Requested to load FluxClipModel_
+[2025-03-17 19:07:02.472] loaded completely 21578.6125 9319.23095703125 True
+[2025-03-17 19:07:02.953] Using pytorch attention in VAE
+[2025-03-17 19:07:02.953] Using pytorch attention in VAE
+[2025-03-17 19:07:03.037] VAE load device: cuda:0, offload device: cpu, dtype: torch.bfloat16
+[2025-03-17 19:07:04.376] Requested to load AutoencodingEngine
+[2025-03-17 19:07:04.405] loaded completely 5941.95556640625 159.87335777282715 True
+[2025-03-17 19:07:04.719] FETCH ComfyRegistry Data: 5/78
+[2025-03-17 19:07:05.392] model weight dtype torch.float8_e4m3fn, manual cast: torch.bfloat16
+[2025-03-17 19:07:05.392] model_type FLUX
+[2025-03-17 19:07:06.773] Requested to load Flux
+[2025-03-17 19:07:10.313] FETCH ComfyRegistry Data: 10/78
+[2025-03-17 19:07:12.366] ERROR lora diffusion_model.img_in.weight shape '[3072, 384]' is invalid for input of size 196608
+[2025-03-17 19:07:12.376] loaded completely 14344.30303515625 11351.004943847656 True
+[2025-03-17 19:07:15.030] FETCH ComfyRegistry Data: 15/78
+[2025-03-17 19:07:19.137] FETCH ComfyRegistry Data: 20/78
+[2025-03-17 19:07:23.734] FETCH ComfyRegistry Data: 25/78
+[2025-03-17 19:07:27.887] FETCH ComfyRegistry Data: 30/78
+[2025-03-17 19:07:32.071] FETCH ComfyRegistry Data: 35/78
+[2025-03-17 19:07:36.618] FETCH ComfyRegistry Data: 40/78
+[2025-03-17 19:07:40.752] FETCH ComfyRegistry Data: 45/78
+[2025-03-17 19:07:45.427] FETCH ComfyRegistry Data: 50/78
+[2025-03-17 19:07:49.509]
+100%|██████████| 12/12 [00:37<00:00,  3.29s/it]
+100%|██████████| 12/12 [00:37<00:00,  3.09s/it]
+[2025-03-17 19:07:50.094] FETCH ComfyRegistry Data: 55/78
+[2025-03-17 19:07:50.529] Requested to load AutoencodingEngine
+[2025-03-17 19:07:51.415] loaded completely 250.8369140625 159.87335777282715 True
+[2025-03-17 19:07:53.043] Cannot connect to comfyregistry.
+[2025-03-17 19:07:53.055] FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json[ComfyUI-Manager] Due to a network error, switching to local mode.
+=> custom-node-list.json
+=> cannot schedule new futures after shutdown
+[2025-03-17 19:07:53.079] FETCH DATA from: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/comfyui-manager/custom-node-list.json [DONE]
+[2025-03-17 19:07:53.089] [ComfyUI-Manager] All startup tasks have been completed.

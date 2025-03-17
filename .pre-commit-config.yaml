@@ -11,18 +11,6 @@ fail_fast: false
 
 
 repos:
-  # Ruff
-  - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: "v0.0.259"
-    hooks:
-      - id: ruff
-
-  # Black
-  - repo: https://github.com/psf/black
-    rev: "23.1.0"
-    hooks:
-      - id: black
-
   # UV
   - repo: https://github.com/astral-sh/uv-pre-commit
     # uv version.
@@ -30,3 +18,19 @@ repos:
     hooks:
       - id: uv-lock
       - id: uv-export
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: check-vcs-permalinks
+      - id: check-yaml
+      - id: destroyed-symlinks
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: fix-byte-order-marker
+      - id: mixed-line-ending
+      - id: no-commit-to-branch
+      - id: trailing-whitespace

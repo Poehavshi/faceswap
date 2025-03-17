@@ -1,0 +1,84 @@
+## ComfyUI-Manager: installing dependencies done.
+[2025-03-17 17:28:16.704] ** ComfyUI startup time: 2025-03-17 17:28:16.704
+[2025-03-17 17:28:16.704] ** Platform: Linux
+[2025-03-17 17:28:16.704] ** Python version: 3.12.9 (main, Feb 12 2025, 14:50:50) [Clang 19.1.6 ]
+[2025-03-17 17:28:16.704] ** Python executable: /opt/comfy/ComfyUI/.venv/bin/python
+[2025-03-17 17:28:16.704] ** ComfyUI Path: /opt/comfy/ComfyUI
+[2025-03-17 17:28:16.704] ** ComfyUI Base Folder Path: /opt/comfy/ComfyUI
+[2025-03-17 17:28:16.704] ** User directory: /opt/comfy/ComfyUI/user
+[2025-03-17 17:28:16.704] ** ComfyUI-Manager config path: /opt/comfy/ComfyUI/user/default/ComfyUI-Manager/config.ini
+[2025-03-17 17:28:16.704] ** Log path: /opt/comfy/ComfyUI/user/comfyui.log
+
+Prestartup times for custom nodes:
+[2025-03-17 17:28:17.114]    0.0 seconds: /opt/comfy/ComfyUI/custom_nodes/rgthree-comfy
+[2025-03-17 17:28:17.114]    0.9 seconds: /opt/comfy/ComfyUI/custom_nodes/comfyui-manager
+[2025-03-17 17:28:17.114]
+[2025-03-17 17:28:17.853] Checkpoint files will always be loaded safely.
+[2025-03-17 17:28:17.924] Total VRAM 24257 MB, total RAM 128581 MB
+[2025-03-17 17:28:17.924] pytorch version: 2.6.0+cu124
+[2025-03-17 17:28:17.925] Set vram state to: NORMAL_VRAM
+[2025-03-17 17:28:17.925] Device: cuda:0 NVIDIA GeForce RTX 3090 : cudaMallocAsync
+[2025-03-17 17:28:18.500] Using pytorch attention
+[2025-03-17 17:28:19.013] ComfyUI version: 0.3.26
+[2025-03-17 17:28:19.015] ComfyUI frontend version: 1.12.14
+[2025-03-17 17:28:19.016] [Prompt Server] web root: /opt/comfy/ComfyUI/.venv/lib/python3.12/site-packages/comfyui_frontend_package/static
+[2025-03-17 17:28:19.302] ### Loading: ComfyUI-Impact-Pack (V8.8.1)
+[2025-03-17 17:28:19.333] [Impact Pack] Wildcards loading done.
+[2025-03-17 17:28:19.334] Total VRAM 24257 MB, total RAM 128581 MB
+[2025-03-17 17:28:19.334] pytorch version: 2.6.0+cu124
+[2025-03-17 17:28:19.334] Set vram state to: NORMAL_VRAM
+[2025-03-17 17:28:19.334] Device: cuda:0 NVIDIA GeForce RTX 3090 : cudaMallocAsync
+[2025-03-17 17:28:19.533] ### Loading: ComfyUI-Manager (V3.31.5)
+[2025-03-17 17:28:19.533] [ComfyUI-Manager] network_mode: public
+[2025-03-17 17:28:19.564] ### ComfyUI Version: v0.3.26-32-g55a1b09d | Released on '2025-03-15'
+[2025-03-17 17:28:19.856] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2025-03-17 17:28:19.870] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2025-03-17 17:28:19.871] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2025-03-17 17:28:19.889] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2025-03-17 17:28:20.029] /opt/comfy/ComfyUI/.venv/lib/python3.12/site-packages/albumentations/__init__.py:13: UserWarning: A new version of Albumentations is available: 2.0.5 (you have 1.4.15). Upgrade using: pip install -U albumentations. To disable automatic update checks, set the environment variable NO_ALBUMENTATIONS_UPDATE to 1.
+  check_for_updates()
+[2025-03-17 17:28:20.116] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2025-03-17 17:28:20.233]
+[0;33m[ReActor][0m - [38;5;173mSTATUS[0m - [0;32mRunning v0.6.0-a1 in ComfyUI[0m
+[2025-03-17 17:28:20.246] Torch version: 2.6.0+cu124
+[2025-03-17 17:28:20.361] ComfyUI found: /opt/comfy/ComfyUI
+[2025-03-17 17:28:20.361] '/opt/comfy/ComfyUI' added to sys.path
+[2025-03-17 17:28:20.371]
+[2025-03-17 17:28:20.371] [92m[rgthree-comfy] Loaded 42 fantastic nodes. 🎉[00m
+[2025-03-17 17:28:20.371]
+[2025-03-17 17:28:20.371]
+Import times for custom nodes:
+[2025-03-17 17:28:20.371]    0.0 seconds: /opt/comfy/ComfyUI/custom_nodes/websocket_image_save.py
+[2025-03-17 17:28:20.371]    0.0 seconds: /opt/comfy/ComfyUI/custom_nodes/comfyui-inpaint-cropandstitch
+[2025-03-17 17:28:20.371]    0.0 seconds: /opt/comfy/ComfyUI/custom_nodes/rgthree-comfy
+[2025-03-17 17:28:20.371]    0.0 seconds: /opt/comfy/ComfyUI/custom_nodes/efficiency-nodes-comfyui
+[2025-03-17 17:28:20.371]    0.0 seconds: /opt/comfy/ComfyUI/custom_nodes/comfyui_essentials
+[2025-03-17 17:28:20.371]    0.0 seconds: /opt/comfy/ComfyUI/custom_nodes/comfyui-kjnodes
+[2025-03-17 17:28:20.371]    0.0 seconds: /opt/comfy/ComfyUI/custom_nodes/ComfyUI-to-Python-Extension
+[2025-03-17 17:28:20.371]    0.0 seconds: /opt/comfy/ComfyUI/custom_nodes/comfyui-impact-pack
+[2025-03-17 17:28:20.371]    0.0 seconds: /opt/comfy/ComfyUI/custom_nodes/comfyui-manager
+[2025-03-17 17:28:20.371]    0.2 seconds: /opt/comfy/ComfyUI/custom_nodes/teacache
+[2025-03-17 17:28:20.371]    0.8 seconds: /opt/comfy/ComfyUI/custom_nodes/comfyui-reactor
+[2025-03-17 17:28:20.371]
+[2025-03-17 17:28:20.377] Starting server
+
+[2025-03-17 17:28:20.377] To see the GUI go to: http://127.0.0.1:8188
+[2025-03-17 17:28:23.932] FETCH ComfyRegistry Data: 5/78
+[2025-03-17 17:28:28.067] FETCH ComfyRegistry Data: 10/78
+[2025-03-17 17:28:32.207] FETCH ComfyRegistry Data: 15/78
+[2025-03-17 17:28:36.888] FETCH ComfyRegistry Data: 20/78
+[2025-03-17 17:28:40.986] FETCH ComfyRegistry Data: 25/78
+[2025-03-17 17:28:45.111] FETCH ComfyRegistry Data: 30/78
+[2025-03-17 17:28:50.186] FETCH ComfyRegistry Data: 35/78
+[2025-03-17 17:28:55.738] FETCH ComfyRegistry Data: 40/78
+[2025-03-17 17:29:00.755] FETCH ComfyRegistry Data: 45/78
+[2025-03-17 17:29:04.868] FETCH ComfyRegistry Data: 50/78
+[2025-03-17 17:29:09.481] FETCH ComfyRegistry Data: 55/78
+[2025-03-17 17:29:13.572] FETCH ComfyRegistry Data: 60/78
+[2025-03-17 17:29:20.128] FETCH ComfyRegistry Data: 65/78
+[2025-03-17 17:29:24.949] FETCH ComfyRegistry Data: 70/78
+[2025-03-17 17:29:29.219] FETCH ComfyRegistry Data: 75/78
+[2025-03-17 17:29:32.365] FETCH ComfyRegistry Data [DONE]
+[2025-03-17 17:29:32.423] [ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+[2025-03-17 17:29:32.427] FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json [DONE]
+[2025-03-17 17:29:32.743] [ComfyUI-Manager] All startup tasks have been completed.

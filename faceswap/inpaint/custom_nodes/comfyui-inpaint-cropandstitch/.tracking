@@ -1,0 +1,10 @@
+inpaint-cropandstitch_example_workflow.png
+inpaint_cropandstitch.py
+inpaint-cropandstitch_example_workflow.json
+README.md
+.gitignore
+LICENSE
+pyproject.toml
+__init__.py
+js/showcontrol.js
+.github/workflows/publish.yml

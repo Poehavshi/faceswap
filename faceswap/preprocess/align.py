@@ -96,8 +96,8 @@ def align(source_image):
                 "name": "FaceAnalysisModel",
                 "predict_type": "ort",
                 "model_path": [
-                    "/home/arkadii/personal/faceswap/faceswap/checkpoints/retinaface_det_static.onnx",
-                    "/home/arkadii/personal/faceswap/faceswap/checkpoints/face_2dpose_106_static.onnx",
+                    "/data/checkpoints/retinaface_det_static.onnx",
+                    "/data/checkpoints/face_2dpose_106_static.onnx",
                 ],
             },
             # "face_analysis": {
@@ -107,7 +107,7 @@ def align(source_image):
             "landmark": {
                 "name": "LandmarkModel",
                 "predict_type": "ort",
-                "model_path": "/home/arkadii/personal/faceswap/faceswap/checkpoints/landmark.onnx",
+                "model_path": "/data/checkpoints/landmark.onnx",
             },
         },
         "infer_params": {

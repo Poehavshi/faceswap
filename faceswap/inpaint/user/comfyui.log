@@ -1,0 +1,47 @@
+## ComfyUI-Manager: installing dependencies done.
+[2025-03-17 20:04:16.847] ** ComfyUI startup time: 2025-03-17 20:04:16.847
+[2025-03-17 20:04:16.847] ** Platform: Linux
+[2025-03-17 20:04:16.847] ** Python version: 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
+[2025-03-17 20:04:16.847] ** Python executable: /home/arkadii/personal/faceswap/.venv/bin/python3
+[2025-03-17 20:04:16.847] ** ComfyUI Path: /home/arkadii/personal/faceswap/faceswap
+[2025-03-17 20:04:16.847] ** ComfyUI Base Folder Path: /home/arkadii/personal/faceswap/faceswap
+[2025-03-17 20:04:16.847] ** User directory: /home/arkadii/personal/faceswap/faceswap/inpaint/user
+[2025-03-17 20:04:16.847] ** ComfyUI-Manager config path: /home/arkadii/personal/faceswap/faceswap/inpaint/user/default/ComfyUI-Manager/config.ini
+[2025-03-17 20:04:16.847] ** Log path: /home/arkadii/personal/faceswap/faceswap/inpaint/user/comfyui.log
+
+Prestartup times for custom nodes:
+[2025-03-17 20:04:17.228]    0.0 seconds: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/rgthree-comfy
+[2025-03-17 20:04:17.228]    0.9 seconds: /home/arkadii/personal/faceswap/faceswap/inpaint/custom_nodes/comfyui-manager
+[2025-03-17 20:04:17.228]
+[2025-03-17 20:04:17.236] Checkpoint files will always be loaded safely.
+[2025-03-17 20:04:17.255] Traceback (most recent call last):
+[2025-03-17 20:04:17.255]   File "/home/arkadii/personal/faceswap/faceswap/cli.py", line 5, in <module>
+[2025-03-17 20:04:17.256]     from faceswap.inpaint.inpaint import main
+[2025-03-17 20:04:17.256]   File "/home/arkadii/personal/faceswap/faceswap/inpaint/inpaint.py", line 89, in <module>
+[2025-03-17 20:04:17.256]     add_extra_model_paths()
+[2025-03-17 20:04:17.256]   File "/home/arkadii/personal/faceswap/faceswap/inpaint/inpaint.py", line 72, in add_extra_model_paths
+[2025-03-17 20:04:17.256]     from main import load_extra_path_config
+[2025-03-17 20:04:17.256]   File "/home/arkadii/personal/faceswap/faceswap/inpaint/main.py", line 136, in <module>
+[2025-03-17 20:04:17.256]     import execution
+[2025-03-17 20:04:17.256]   File "/home/arkadii/personal/faceswap/faceswap/inpaint/execution.py", line 13, in <module>
+[2025-03-17 20:04:17.256]     import nodes
+[2025-03-17 20:04:17.256]   File "/home/arkadii/personal/faceswap/faceswap/inpaint/nodes.py", line 22, in <module>
+[2025-03-17 20:04:17.256]     import comfy.diffusers_load
+[2025-03-17 20:04:17.256]   File "/home/arkadii/personal/faceswap/faceswap/inpaint/comfy/diffusers_load.py", line 3, in <module>
+[2025-03-17 20:04:17.256]     import comfy.sd
+[2025-03-17 20:04:17.256]   File "/home/arkadii/personal/faceswap/faceswap/inpaint/comfy/sd.py", line 7, in <module>
+[2025-03-17 20:04:17.256]     from comfy import model_management
+[2025-03-17 20:04:17.256]   File "/home/arkadii/personal/faceswap/faceswap/inpaint/comfy/model_management.py", line 195, in <module>
+[2025-03-17 20:04:17.256]     total_vram = get_total_memory(get_torch_device()) / (1024 * 1024)
+[2025-03-17 20:04:17.256]                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-17 20:04:17.257]   File "/home/arkadii/personal/faceswap/faceswap/inpaint/comfy/model_management.py", line 180, in get_total_memory
+[2025-03-17 20:04:17.257]     _, mem_total_cuda = torch.cuda.mem_get_info(dev)
+[2025-03-17 20:04:17.257]                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-17 20:04:17.258]   File "/home/arkadii/personal/faceswap/.venv/lib/python3.11/site-packages/torch/cuda/memory.py", line 738, in mem_get_info
+[2025-03-17 20:04:17.267]     return torch.cuda.cudart().cudaMemGetInfo(device)
+[2025-03-17 20:04:17.267]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-17 20:04:17.268] RuntimeError: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+[2025-03-17 20:04:17.268]
