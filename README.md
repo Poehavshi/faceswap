@@ -74,12 +74,23 @@ Result:
 
 ## Installation
 
+1. Install dependencies
 ```bash
 pip install -e .
+```
+
+2. Download checkpoints from https://drive.google.com/drive/folders/1MF_mTWnfui9yOcSk3Vsu44SayQ8kx_zu?usp=sharing
+
+3. Place them in some folder
+
+4. Set path to the folder with checkpoints in environment variable
+```bash
+export MODELS_DIR=<path_to_checkpoints>
 ```
 
 ## Usage
 
 ```bash
+export PYTHONPATH=$PYTHONPATH:$(pwd)/faceswap/inpaint
 python faceswap --source <source_image> --target <target_image> --output <output_image>
 ```

@@ -1,11 +1,15 @@
+import os
+
+from faceswap.config import settings
+
 cfg = {
     "models": {
         "face_analysis": {
             "name": "FaceAnalysisModel",
             "predict_type": "ort",
             "model_path": [
-                "/data/checkpoints/retinaface_det_static.onnx",
-                "/data/checkpoints/face_2dpose_106_static.onnx",
+                os.path.join(settings.models_dir, "retinaface_det_static.onnx"),
+                os.path.join(settings.models_dir, "face_2dpose_106_static.onnx"),
             ],
         },
         # "face_analysis": {
@@ -15,7 +19,7 @@ cfg = {
         "landmark": {
             "name": "LandmarkModel",
             "predict_type": "ort",
-            "model_path": "/data/checkpoints/landmark.onnx",
+            "model_path": os.path.join(settings.models_dir, "landmark.onnx"),
         },
     },
     "infer_params": {

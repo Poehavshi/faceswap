@@ -8,6 +8,7 @@ from typing import Literal
 from collections.abc import Collection
 
 from comfy.cli_args import args
+from faceswap.config import settings
 
 supported_pt_extensions: set[str] = {'.ckpt', '.pt', '.pt2', '.bin', '.pth', '.safetensors', '.pkl', '.sft'}
 
@@ -20,7 +21,7 @@ else:
     base_path = os.path.dirname(os.path.realpath(__file__))
 
 # models_dir = os.path.join(base_path, "models")
-models_dir = "/data/models/models"
+models_dir = settings.models_dir
 folder_names_and_paths["checkpoints"] = ([os.path.join(models_dir, "checkpoints")], supported_pt_extensions)
 folder_names_and_paths["configs"] = ([os.path.join(models_dir, "configs")], [".yaml"])
 
