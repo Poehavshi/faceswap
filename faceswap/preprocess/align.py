@@ -154,12 +154,18 @@ def create_mask(target_image):
 
 
 if __name__ == "__main__":
-    # for file in glob.glob("/home/arkadii/personal/faceswap/faceswap/data/raw/*.jpg"):
-    #     stem = file.split("/")[-1].split(".")[0]
-    #     image = cv2.imread(file)
-    #     aligned_image = align(image)
-    #     cv2.imwrite(f"/home/arkadii/personal/faceswap/faceswap/data/aligned/{stem}.png", aligned_image)
-    #
+    for file in glob.glob("/home/arkadii/personal/faceswap/faceswap/data/raw/*.jpg"):
+        stem = file.split("/")[-1].split(".")[0]
+        image = cv2.imread(file)
+        aligned_image = align(image)
+        cv2.imwrite(f"/home/arkadii/personal/faceswap/faceswap/data/aligned/{stem}.png", aligned_image)
+
     destination = cv2.imread("/home/arkadii/personal/faceswap/faceswap/data/destination.jpg")
     masked = create_mask(destination)
     cv2.imwrite(f"/home/arkadii/personal/faceswap/faceswap/data/destination_masked.png", masked)
+
+    for file in glob.glob("/home/arkadii/personal/faceswap/faceswap/data/faceswaps/*.png"):
+        stem = file.split("/")[-1].split(".")[0]
+        image = cv2.imread(file)
+        aligned_image = align(image)
+        cv2.imwrite(f"/home/arkadii/personal/faceswap/faceswap/data/aligned_faceswaps/{stem}.png", aligned_image)

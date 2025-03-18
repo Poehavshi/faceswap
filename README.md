@@ -45,11 +45,16 @@ After:
 
 ![destination_masked.png](faceswap/data/destination_masked.png)
 
-### 2. Faceswap
+### 2. Face swap + enhancement
 
-Second step utilize ACE++ model with FluxFill and [portrait lora](https://huggingface.co/ali-vilab/ACE_Plus/tree/main/portrait) from the authors of ACE++
+Second step utilize ACE++ model based on the Flux.1 Fill
 
 Comfy workflow with the same pipeline can be founded in faceswap/inpaint/workflow/Flux_ACE++.json
+
+### Enhancement
+To improve naturalness and quality of face,
+solution utilize [portrait lora](https://huggingface.co/ali-vilab/ACE_Plus/tree/main/portrait)
+and [FLUX.1-Turbo-Alpha LoRa](https://civitai.com/models/876388/flux1-turbo-alpha)
 
 Input:
 
@@ -67,9 +72,6 @@ Input:
 Result:
 
 ![IMG_0653.png](faceswap/data/faceswaps/IMG_0653.png)
-
-### Enhancment
-
 
 
 ## Installation
