@@ -1,3 +1,4 @@
+import cv2
 import numpy as np
 
 from faceswap.preprocess.utils.crop import _transform_pts, crop_image

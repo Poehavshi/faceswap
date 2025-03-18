@@ -8,7 +8,7 @@ from faceswap.preprocess.utils import face_align
 from .predictor import get_predictor
 
 
-def sort_by_direction(faces, direction: str = "large-small", face_center=None):
+def sort_by_direction(faces, direction: str = "large-small"):
     if len(faces) <= 0:
         return faces
 
@@ -27,15 +27,6 @@ def sort_by_direction(faces, direction: str = "large-small", face_center=None):
             faces,
             key=lambda face: (face["bbox"][2] - face["bbox"][0]) * (face["bbox"][3] - face["bbox"][1]),
             reverse=True,
-        )
-    if direction == "distance-from-retarget-face":
-        return sorted(
-            faces,
-            key=lambda face: (
-                ((face["bbox"][2] + face["bbox"][0]) / 2 - face_center[0]) ** 2
-                + ((face["bbox"][3] + face["bbox"][1]) / 2 - face_center[1]) ** 2
-            )
-            ** 0.5,
         )
     return faces
 
@@ -271,7 +262,7 @@ class FaceAnalysisModel:
             face = Face(bbox=bbox, kps=kps, det_score=det_score)
             self.estimate_face_pose(data[0], face)
             ret.append(face)
-        ret = sort_by_direction(ret, "large-small", None)
+        ret = sort_by_direction(ret, "large-small")
         outs = [x.landmark for x in ret]
         return outs
 
