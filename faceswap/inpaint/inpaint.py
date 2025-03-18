@@ -122,7 +122,7 @@ from nodes import NODE_CLASS_MAPPINGS
 
 def main(source_image, target_image):
     # masked_target_image_path = "clipspace/clipspace-mask-26662.png [input]"
-    masked_target_image_name = "tmp_target.jpg"
+    masked_target_image_name = "tmp_target.png"
     masked_target_image_path = os.path.join(get_input_directory(), masked_target_image_name)
     cv2.imwrite(masked_target_image_path, target_image)
 

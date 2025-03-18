@@ -8,7 +8,7 @@ All results can be found at faceswap/data/faceswaps
 
 Pipeline consist of several main steps:
 
-### 1. Face aligment
+### 1. Face aligment and mask creation
 
 It's located under faceswap/preprocess/align.py.
 
@@ -34,6 +34,16 @@ Before:
 After:
 
 ![IMG_6909.png](faceswap/data/aligned/IMG_6909.png)
+
+Mask creation use landmarks to create mask from it
+
+Before:
+
+![destination.jpg](faceswap/data/destination.jpg)
+
+After:
+
+![destination_masked.png](faceswap/data/destination_masked.png)
 
 ### 2. Faceswap
 

@@ -116,13 +116,23 @@ class FaceAlignerPipeline:
                 lmk = self.model_dict["landmark"].predict(img_rgb, lmk)
                 ret_dct["lmk_crop"] = lmk
 
-                mask = img_bgr
+                mask = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2BGRA)
+
+                binary_mask = np.ones(img_bgr.shape[:2], dtype=np.uint8) * 255
+
                 points = np.array(lmk, dtype=np.int32)
                 hull = ConvexHull(points)
                 hull_points = points[hull.vertices]
-                cv2.fillConvexPoly(mask, hull_points, (0, 0, 0))
-                mask = cv2.GaussianBlur(mask, (5, 5), 0)
-                return mask
+                cv2.fillConvexPoly(binary_mask, hull_points, 0)  # 0 = area to be transparent
+
+                binary_mask = cv2.GaussianBlur(binary_mask, (5, 5), 0)
+
+                mask[:, :, 3] = binary_mask
+
+                ret_dct["mask"] = mask
+                crop_infos.append(ret_dct)
+
+            return mask
         except Exception:
             logger.exception("Error in prepare_source")
             return False
@@ -152,4 +162,4 @@ if __name__ == "__main__":
     #
     destination = cv2.imread("/home/arkadii/personal/faceswap/faceswap/data/destination.jpg")
     masked = create_mask(destination)
-    cv2.imwrite(f"/home/arkadii/personal/faceswap/faceswap/data/destination_masked.jpg", masked)
+    cv2.imwrite(f"/home/arkadii/personal/faceswap/faceswap/data/destination_masked.png", masked)
